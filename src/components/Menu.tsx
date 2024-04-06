@@ -6,7 +6,7 @@ function Menu() {
   return (
     <div className="w-full flex justify-center">
       {location.pathname === "/" || location.pathname === "/favorites" ? (
-        <div className="relative w-[60%] flex items-center  justify-center gap-2 p-1 rounded-full border border-gray-300 my-7 shadow-sm   ">
+        <div className="relative w-[80%] md:w-[60%] flex items-center  justify-center gap-2 p-1 rounded-full border border-gray-300 my-7 shadow-sm   ">
           <Link
             to="/"
             className={classNames(
@@ -31,16 +31,16 @@ function Menu() {
           </Link>
           <div
             className={classNames(
-              location.pathname === "/" ? " left-1" : "left-[49.5%]",
+              location.pathname === "/" ? " left-1" : "left-[49%]",
               "absolute z-10 h-[85%]  ease-in-out duration-500 w-1/2 rounded-full bg-blue-600",
             )}
           ></div>
         </div>
       ) : (
-        <div className="w-full flex pl-[15%]">
+        <div className="w-full flex pl-3 md:pl-[15%]">
           <Link
             to="/"
-            className="flex gap-2 my-3 items-center  bg-blue-600 px-7 py-2 rounded-md text-xl  text-white"
+            className="flex gap-2 my-3 items-center  bg-blue-600 px-7 py-2 rounded-md text-[16px] md:text-xl  text-white"
           >
             <span className="material-icons">arrow_back </span> Retour
           </Link>

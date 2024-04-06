@@ -8,13 +8,13 @@ function PostItem({ title, id }: Partial<Post>) {
   };
 
   return (
-    <div className="relative group/post w-[350px] flex flex-col gap-3 p-3 border border-gray-200 rounded-xl overflow-hidden hover:border-2 hover:border-blue-600 shadow-md">
+    <div className="relative group/post w-full md:w-[350px]  flex flex-col gap-3 p-2 md:p-3 border border-gray-200 rounded-xl overflow-hidden hover:border-2 hover:border-blue-600 shadow-sm md:shadow-md">
       <div className="flex justify-between">
         <div className="flex gap-2">
           <img
             src="https://source.unsplash.com/40x40?face"
             alt="photo de profile"
-            className="size-12 rounded-full object-cover"
+            className="size-12 rounded-full object-cover bg-gray-200"
           />
           <div className="flex flex-col  ">
             <h3 className="font-bold text-[18px] text-gray-800">Assaf</h3>
@@ -35,13 +35,13 @@ function PostItem({ title, id }: Partial<Post>) {
           </span>
         </div>
       </div>
-      <div className="font-medium h-[50px] text-xl ">
+      <div className="font-medium h-[50px] text-[16px] md:text-xl ">
         {title && title.length > 70 ? title?.slice(0, 60) + "..." : title}
       </div>
       <img
         src={`https://source.unsplash.com/300x300?image-nature`}
         alt=""
-        className="w-full h-[300px] rounded-xl object-cover "
+        className="w-full h-[300px] rounded-xl object-cover bg-gray-200"
       />
       <div className="w-full flex justify-between">
         <div className="flex items-center">
@@ -79,10 +79,10 @@ function PostItem({ title, id }: Partial<Post>) {
         )}
       >
         <div className=" relative w-full h-[180px] flex justify-center items-center px-3 rounded-t-2xl rounded-b-[10px] bg-blue-600">
-          <div className="absolute top-2 min-h-1.5 w-[40%] bg-white rounded-full"></div>
+          <div className="absolute top-2 min-h-1 md:min-h-1.5 w-[40%] bg-white rounded-full"></div>
           <Link
             to={`/post/${id}`}
-            className="  w-full rounded-md bg-white hover:bg-blue-50 py-2 text-center text-xl font-bold text-gray-900 shadow-md"
+            className="  w-full rounded-md bg-white hover:bg-blue-50 py-3 text-center text-[18px] md:text-xl font-bold text-gray-900 shadow-md"
           >
             Voir le post
           </Link>
