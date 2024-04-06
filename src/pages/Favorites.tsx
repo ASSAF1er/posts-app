@@ -1,5 +1,11 @@
+import NoFavorite from "../components/NoFavorite";
+
 function Favorites() {
-  return <div></div>;
+  return (
+    <div>
+      <NoFavorite />
+    </div>
+  );
 }
 
 export default Favorites;

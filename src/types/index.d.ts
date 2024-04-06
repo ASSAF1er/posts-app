@@ -11,3 +11,6 @@ interface PostListProps {
 interface getPostsProps {
   getPosts: () => void;
 }
+interface FavoritesProps {
+  posts: Post[];
+}
