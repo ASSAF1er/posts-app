@@ -15,7 +15,7 @@ function Menu() {
             "flex-1 z-20 rounded-full   text-center text-xl py-2 cursor-pointer",
           )}
         >
-          Accueil
+          Tous
         </Link>
         <Link
           to="/favorites"
