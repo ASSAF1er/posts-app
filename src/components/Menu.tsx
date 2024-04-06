@@ -4,7 +4,7 @@ function Menu() {
   const location = useLocation();
 
   return (
-    <div className="w-screen flex justify-center">
+    <div className="w-full flex justify-center">
       <div className="relative w-[60%] flex items-center  justify-center gap-2 p-1 rounded-full border border-gray-300 my-7 shadow-sm   ">
         <Link
           to="/"
